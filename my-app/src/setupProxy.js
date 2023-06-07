@@ -1,6 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
+  //api2
   app.use(
     '/api2/todos', //proxy가 필요한 path prameter를 입력합니다.
     createProxyMiddleware({
