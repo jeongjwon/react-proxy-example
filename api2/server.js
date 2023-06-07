@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../my-app/build')));
 
 app.get('/api2/todos', (req, res) => {
-  console.log('api/todos called!')
+  console.log('api/todos called!');
   res.json(todos);
 });
 
